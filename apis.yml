@@ -1,0 +1,219 @@
+aid: cloud-storage
+name: Cloud Storage
+description: >-
+  Cloud Storage is a topic profile in the API Evangelist Network
+  covering the major cloud and S3-compatible object, file, and block
+  storage APIs. The topic indexes the canonical hyperscaler offerings
+  (Amazon S3, Google Cloud Storage, Azure Blob Storage) alongside
+  S3-compatible alternatives (Wasabi, Backblaze B2, MinIO, Cloudflare
+  R2, IBM Cloud Object Storage, DigitalOcean Spaces, Linode Object
+  Storage), file storage (Amazon EFS, Google Filestore, Azure Files),
+  and block storage (Amazon EBS, Google Persistent Disk, Azure
+  Managed Disks). It is the parent topic to more specialized profiles
+  in the network such as cloud-storage-and-data-acquisition.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/cloud-storage/refs/heads/main/apis.yml
+created: '2024-01-01'
+modified: '2026-04-23'
+specificationVersion: '0.19'
+x-type: topic
+tags:
+  - Block Storage
+  - Cloud
+  - Cloud Storage
+  - File Storage
+  - Object Storage
+  - S3 Compatible
+  - Storage
+apis:
+  - aid: cloud-storage:amazon-s3
+    name: Amazon S3
+    tags:
+      - AWS
+      - Object Storage
+      - REST
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://aws.amazon.com/s3/
+    properties:
+      - url: https://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html
+        type: Documentation
+    description: >-
+      Amazon Simple Storage Service (S3) is the de-facto standard
+      cloud object store. Its REST API at s3.amazonaws.com supports
+      buckets, objects, multipart uploads, lifecycle rules, server-
+      side encryption, replication, and event notifications.
+  - aid: cloud-storage:google-cloud-storage
+    name: Google Cloud Storage
+    tags:
+      - GCP
+      - Object Storage
+      - REST
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://cloud.google.com/storage
+    properties:
+      - url: https://cloud.google.com/storage/docs/json_api/v1
+        type: Documentation
+    description: >-
+      Google Cloud Storage provides unified object storage with the
+      JSON API at storage.googleapis.com. It supports buckets,
+      objects, IAM, customer-managed encryption keys, and Pub/Sub
+      change notifications.
+  - aid: cloud-storage:azure-blob-storage
+    name: Azure Blob Storage
+    tags:
+      - Azure
+      - Object Storage
+      - REST
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://azure.microsoft.com/en-us/services/storage/blobs/
+    properties:
+      - url: https://learn.microsoft.com/en-us/rest/api/storageservices/blob-service-rest-api
+        type: Documentation
+    description: >-
+      Azure Blob Storage offers block, append, and page blob types
+      through the Blob service REST API. It supports access tiers,
+      lifecycle management, lease semantics, and Event Grid
+      integration for change notifications.
+  - aid: cloud-storage:cloudflare-r2
+    name: Cloudflare R2
+    tags:
+      - Cloudflare
+      - Egress-Free
+      - Object Storage
+      - S3 Compatible
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://www.cloudflare.com/products/r2/
+    properties:
+      - url: https://developers.cloudflare.com/r2/api/
+        type: Documentation
+    description: >-
+      Cloudflare R2 is a zero-egress-fee object store with an
+      S3-compatible API. R2 buckets are accessed at
+      <accountid>.r2.cloudflarestorage.com and integrate with
+      Cloudflare Workers for edge-computed access patterns.
+  - aid: cloud-storage:backblaze-b2
+    name: Backblaze B2 Cloud Storage
+    tags:
+      - Backblaze
+      - Object Storage
+      - S3 Compatible
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://www.backblaze.com/cloud-storage
+    properties:
+      - url: https://www.backblaze.com/apidocs
+        type: Documentation
+    description: >-
+      Backblaze B2 Cloud Storage provides low-cost object storage
+      with a native B2 API and an S3-compatible API. It is widely
+      used as a backup and media storage target.
+  - aid: cloud-storage:wasabi
+    name: Wasabi Hot Cloud Storage
+    tags:
+      - Object Storage
+      - S3 Compatible
+      - Wasabi
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://wasabi.com/
+    properties:
+      - url: https://docs.wasabi.com/v1/docs/api-guide
+        type: Documentation
+    description: >-
+      Wasabi Hot Cloud Storage offers S3-compatible object storage
+      at a flat per-TB price with no egress or API request fees.
+      It is positioned as a hot tier replacement for S3.
+  - aid: cloud-storage:minio
+    name: MinIO
+    tags:
+      - Object Storage
+      - On-Premises
+      - Open Source
+      - S3 Compatible
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://min.io/
+    properties:
+      - url: https://min.io/docs/minio/linux/developers/minio-drivers.html
+        type: Documentation
+    description: >-
+      MinIO is a high-performance, S3-compatible object store
+      designed for AI/ML, analytics, and on-premises private cloud
+      use cases. It can be deployed standalone or as a distributed
+      erasure-coded cluster.
+  - aid: cloud-storage:ibm-cos
+    name: IBM Cloud Object Storage
+    tags:
+      - IBM
+      - Object Storage
+      - S3 Compatible
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://www.ibm.com/cloud/object-storage
+    properties:
+      - url: https://cloud.ibm.com/docs/cloud-object-storage?topic=cloud-object-storage-compatibility-api
+        type: Documentation
+    description: >-
+      IBM Cloud Object Storage exposes an S3-compatible API and
+      Aspera high-speed transfer integrations. It supports SmartTier
+      placement and Immutable Object Storage.
+  - aid: cloud-storage:digitalocean-spaces
+    name: DigitalOcean Spaces
+    tags:
+      - DigitalOcean
+      - Object Storage
+      - S3 Compatible
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://www.digitalocean.com/products/spaces
+    properties:
+      - url: https://docs.digitalocean.com/reference/api/spaces-api/
+        type: Documentation
+    description: >-
+      DigitalOcean Spaces is an S3-compatible object store with a
+      built-in CDN, designed for developers building on the
+      DigitalOcean platform.
+  - aid: cloud-storage:amazon-efs
+    name: Amazon EFS
+    tags:
+      - AWS
+      - File Storage
+      - NFS
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://aws.amazon.com/efs/
+    properties:
+      - url: https://docs.aws.amazon.com/efs/latest/ug/api-reference.html
+        type: Documentation
+    description: >-
+      Amazon Elastic File System (EFS) is a managed NFS file system
+      for Linux workloads. The control-plane API manages file systems,
+      mount targets, lifecycle policies, and access points.
+  - aid: cloud-storage:amazon-ebs
+    name: Amazon EBS
+    tags:
+      - AWS
+      - Block Storage
+      - Volumes
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://aws.amazon.com/ebs/
+    properties:
+      - url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Operations.html
+        type: Documentation
+    description: >-
+      Amazon Elastic Block Store (EBS) provides persistent block
+      volumes for EC2. The control-plane API manages volumes,
+      snapshots, encryption, and direct snapshot access.
+common:
+  - type: Topic
+    url: https://apievangelist.com/topics/cloud-storage/
+  - type: API Evangelist
+    url: https://apievangelist.com/
+  - type: Network
+    url: https://network.apievangelist.com/
+  - type: GitHub
+    url: https://github.com/api-evangelist
+  - type: Related Topic
+    url: https://github.com/api-evangelist/cloud-storage-and-data-acquisition
+  - type: JSON-LD
+    url: json-ld/cloud-storage-context.jsonld
+  - type: Spectral
+    url: rules/cloud-storage-rules.yml
+maintainers:
+  - FN: Kin Lane
+    email: kinlane@gmail.com

@@ -1,0 +1,114 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "cs": "https://apievangelist.com/topics/cloud-storage/ns/",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms": "http://purl.org/dc/terms/",
+
+    "Bucket": {
+      "@id": "cs:Bucket",
+      "@context": {
+        "name": "schema:name",
+        "provider": "schema:provider",
+        "region": "cs:region",
+        "createdAt": {
+          "@id": "dcterms:created",
+          "@type": "xsd:dateTime"
+        },
+        "versioning": "cs:versioning",
+        "encryption": "cs:encryption",
+        "publicAccess": "cs:public_access"
+      }
+    },
+
+    "Object": {
+      "@id": "cs:Object",
+      "@context": {
+        "key": "cs:key",
+        "size": "schema:contentSize",
+        "etag": "cs:etag",
+        "contentType": "schema:encodingFormat",
+        "storageClass": "cs:storage_class",
+        "lastModified": {
+          "@id": "dcterms:modified",
+          "@type": "xsd:dateTime"
+        }
+      }
+    },
+
+    "MultipartUpload": {
+      "@id": "cs:MultipartUpload",
+      "@context": {
+        "uploadId": "cs:upload_id",
+        "key": "cs:key",
+        "initiatedAt": {
+          "@id": "dcterms:created",
+          "@type": "xsd:dateTime"
+        },
+        "parts": {
+          "@id": "cs:parts",
+          "@container": "@set"
+        }
+      }
+    },
+
+    "FileSystem": {
+      "@id": "cs:FileSystem",
+      "@context": {
+        "id": "cs:id",
+        "name": "schema:name",
+        "performanceMode": "cs:performance_mode",
+        "throughputMode": "cs:throughput_mode",
+        "provisionedThroughputInMibps": "cs:provisioned_throughput",
+        "createdAt": {
+          "@id": "dcterms:created",
+          "@type": "xsd:dateTime"
+        }
+      }
+    },
+
+    "Volume": {
+      "@id": "cs:Volume",
+      "@context": {
+        "id": "cs:id",
+        "size": "schema:contentSize",
+        "type": "cs:volume_type",
+        "iops": "cs:iops",
+        "throughput": "cs:throughput",
+        "encrypted": "cs:encrypted",
+        "createdAt": {
+          "@id": "dcterms:created",
+          "@type": "xsd:dateTime"
+        }
+      }
+    },
+
+    "Snapshot": {
+      "@id": "cs:Snapshot",
+      "@context": {
+        "id": "cs:id",
+        "volumeId": "cs:volume_id",
+        "size": "schema:contentSize",
+        "state": "cs:state",
+        "createdAt": {
+          "@id": "dcterms:created",
+          "@type": "xsd:dateTime"
+        }
+      }
+    },
+
+    "LifecycleRule": {
+      "@id": "cs:LifecycleRule",
+      "@context": {
+        "id": "cs:id",
+        "filter": "cs:filter",
+        "transitions": {
+          "@id": "cs:transitions",
+          "@container": "@set"
+        },
+        "expirationDays": "cs:expiration_days"
+      }
+    }
+  }
+}
