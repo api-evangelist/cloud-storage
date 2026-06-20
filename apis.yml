@@ -12,7 +12,7 @@ description: >-
   Managed Disks). It is the parent topic to more specialized profiles
   in the network such as cloud-storage-and-data-acquisition.
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/cloud-storage/refs/heads/main/apis.yml
 created: '2024-01-01'
 modified: '2026-04-23'
@@ -33,7 +33,7 @@ apis:
       - AWS
       - Object Storage
       - REST
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/s3/
     properties:
       - url: https://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html
@@ -49,7 +49,7 @@ apis:
       - GCP
       - Object Storage
       - REST
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://cloud.google.com/storage
     properties:
       - url: https://cloud.google.com/storage/docs/json_api/v1
@@ -65,7 +65,7 @@ apis:
       - Azure
       - Object Storage
       - REST
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://azure.microsoft.com/en-us/services/storage/blobs/
     properties:
       - url: https://learn.microsoft.com/en-us/rest/api/storageservices/blob-service-rest-api
@@ -82,7 +82,7 @@ apis:
       - Egress-Free
       - Object Storage
       - S3 Compatible
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://www.cloudflare.com/products/r2/
     properties:
       - url: https://developers.cloudflare.com/r2/api/
@@ -98,7 +98,7 @@ apis:
       - Backblaze
       - Object Storage
       - S3 Compatible
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://www.backblaze.com/cloud-storage
     properties:
       - url: https://www.backblaze.com/apidocs
@@ -113,7 +113,7 @@ apis:
       - Object Storage
       - S3 Compatible
       - Wasabi
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://wasabi.com/
     properties:
       - url: https://docs.wasabi.com/v1/docs/api-guide
@@ -129,7 +129,7 @@ apis:
       - On-Premises
       - Open Source
       - S3 Compatible
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://min.io/
     properties:
       - url: https://min.io/docs/minio/linux/developers/minio-drivers.html
@@ -145,7 +145,7 @@ apis:
       - IBM
       - Object Storage
       - S3 Compatible
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://www.ibm.com/cloud/object-storage
     properties:
       - url: https://cloud.ibm.com/docs/cloud-object-storage?topic=cloud-object-storage-compatibility-api
@@ -160,7 +160,7 @@ apis:
       - DigitalOcean
       - Object Storage
       - S3 Compatible
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://www.digitalocean.com/products/spaces
     properties:
       - url: https://docs.digitalocean.com/reference/api/spaces-api/
@@ -175,7 +175,7 @@ apis:
       - AWS
       - File Storage
       - NFS
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/efs/
     properties:
       - url: https://docs.aws.amazon.com/efs/latest/ug/api-reference.html
@@ -190,7 +190,7 @@ apis:
       - AWS
       - Block Storage
       - Volumes
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://aws.amazon.com/ebs/
     properties:
       - url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Operations.html
