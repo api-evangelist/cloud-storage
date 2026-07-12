@@ -200,6 +200,12 @@ apis:
       volumes for EC2. The control-plane API manages volumes,
       snapshots, encryption, and direct snapshot access.
 common:
+  - type: TrustCenter
+    url: security/cloud-storage-trust-center.yml
+  - type: VulnerabilityDisclosure
+    url: security/cloud-storage-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/cloud-storage-domain-security.yml
   - type: Topic
     url: https://apievangelist.com/topics/cloud-storage/
   - type: API Evangelist
