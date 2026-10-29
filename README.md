@@ -1,4 +1,4 @@
-# Cloud Storage (cloud-storage)
+# cloud-storage
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,52 +64,22 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Cloud Storage is a topic profile in the API Evangelist Network covering the major cloud and S3-compatible object, file, and block storage APIs. It indexes hyperscaler offerings (S3, GCS, Azure Blob), S3-compatible alternatives (Wasabi, B2, MinIO, R2, IBM COS, DigitalOcean Spaces), and file/block storage services.
+## cloud-storage on APIs.io
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/cloud-storage/refs/heads/main/apis.yml)
+Everything profiled for cloud-storage is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/cloud-storage/](https://apis.io/providers/cloud-storage/)** — or go straight to one of the APIs or properties below.
 
-## Scope
+## API Evangelist rating
 
-- **Type:** Index
-- **x-type:** topic
+Not yet rated. See [apis.io/providers/cloud-storage/](https://apis.io/providers/cloud-storage/).
 
-## Tags
+## How this profile is made
 
-- Block Storage, Cloud, Cloud Storage, File Storage, Object Storage, S3 Compatible, Storage
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-## Timestamps
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for cloud-storage: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-- **Created:** 2024-01-01
-- **Modified:** 2026-04-23
+## Open an issue
 
-## Indexed APIs
-
-- Amazon S3
-- Google Cloud Storage
-- Azure Blob Storage
-- Cloudflare R2
-- Backblaze B2
-- Wasabi Hot Cloud Storage
-- MinIO
-- IBM Cloud Object Storage
-- DigitalOcean Spaces
-- Amazon EFS
-- Amazon EBS
-
-## Related Topics
-
-- [cloud-storage-and-data-acquisition](https://github.com/api-evangelist/cloud-storage-and-data-acquisition)
-
-## Common Properties
-
-- [Topic Page](https://apievangelist.com/topics/cloud-storage/)
-- [API Evangelist](https://apievangelist.com/)
-- [Network](https://network.apievangelist.com/)
-- [JSON-LD Context](json-ld/cloud-storage-context.jsonld)
-- [Spectral Ruleset](rules/cloud-storage-rules.yml)
-
-## Maintainers
-
-**FN:** Kin Lane
-
-**Email:** kinlane@gmail.com
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/cloud-storage/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
